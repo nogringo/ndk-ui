@@ -37,4 +37,16 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get nostrAddressHint => 'nombre@ejemplo.com';
+
+  @override
+  String get invalidAddress => 'Dirección inválida';
+
+  @override
+  String get unableToConnect => 'No se puede conectar';
+
+  @override
+  String get publicKeyHint => 'npub1...';
+
+  @override
+  String get privateKeyHint => 'nsec1...';
 }

@@ -90,8 +90,8 @@ class NLogin extends StatelessWidget {
                       ),
                 errorText: [
                   null,
-                  "Invalid Address",
-                  "Unable to connect",
+                  AppLocalizations.of(context)!.invalidAddress,
+                  AppLocalizations.of(context)!.unableToConnect,
                 ][NLoginController.to.nip05LoginError.value],
               ),
               onChanged: nip05Change,
@@ -112,7 +112,7 @@ class NLogin extends StatelessWidget {
             style: Theme.of(context).textTheme.labelLarge,
           ),
           TextField(
-            decoration: InputDecoration(hintText: "npub1..."),
+            decoration: InputDecoration(hintText: AppLocalizations.of(context)!.publicKeyHint),
             onChanged: loginWithNpub,
           ),
         ],
@@ -129,7 +129,7 @@ class NLogin extends StatelessWidget {
             style: Theme.of(context).textTheme.labelLarge,
           ),
           TextField(
-            decoration: InputDecoration(hintText: "nsec1..."),
+            decoration: InputDecoration(hintText: AppLocalizations.of(context)!.privateKeyHint),
             onChanged: loginWithNsec,
           ),
         ],

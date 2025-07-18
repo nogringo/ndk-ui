@@ -5,3 +5,4 @@ export 'widgets/n_name.dart';
 export 'functions/pubkey_color.dart';
 export 'functions/n_restore_last_session.dart';
 export 'functions/n_logout.dart';
+export 'functions/nip05_fetch.dart';

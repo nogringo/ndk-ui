@@ -39,5 +39,21 @@
   "nostrAddressHint": "name@example.com",
   "@nostrAddressHint": {
     "description": "Placeholder text for nostr address input field"
+  },
+  "invalidAddress": "Invalid Address",
+  "@invalidAddress": {
+    "description": "Error message for invalid nostr address"
+  },
+  "unableToConnect": "Unable to connect",
+  "@unableToConnect": {
+    "description": "Error message when unable to connect to nostr address"
+  },
+  "publicKeyHint": "npub1...",
+  "@publicKeyHint": {
+    "description": "Placeholder text for public key input field"
+  },
+  "privateKeyHint": "nsec1...",
+  "@privateKeyHint": {
+    "description": "Placeholder text for private key input field"
   }
 }

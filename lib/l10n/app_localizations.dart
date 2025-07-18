@@ -159,6 +159,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'name@example.com'**
   String get nostrAddressHint;
+
+  /// Error message for invalid nostr address
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid Address'**
+  String get invalidAddress;
+
+  /// Error message when unable to connect to nostr address
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to connect'**
+  String get unableToConnect;
+
+  /// Placeholder text for public key input field
+  ///
+  /// In en, this message translates to:
+  /// **'npub1...'**
+  String get publicKeyHint;
+
+  /// Placeholder text for private key input field
+  ///
+  /// In en, this message translates to:
+  /// **'nsec1...'**
+  String get privateKeyHint;
 }
 
 class _AppLocalizationsDelegate

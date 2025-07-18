@@ -9,5 +9,9 @@
   "connect": "Conectar",
   "install": "Instalar",
   "logout": "Cerrar sesión",
-  "nostrAddressHint": "nombre@ejemplo.com"
+  "nostrAddressHint": "nombre@ejemplo.com",
+  "invalidAddress": "Dirección inválida",
+  "unableToConnect": "No se puede conectar",
+  "publicKeyHint": "npub1...",
+  "privateKeyHint": "nsec1..."
 }
