@@ -1,0 +1,13 @@
+{
+  "@@locale": "fr",
+  "createAccount": "Créer votre compte",
+  "newHere": "Êtes-vous nouveau ici?",
+  "nostrAddress": "Adresse Nostr",
+  "publicKey": "Clé publique",
+  "privateKey": "Clé privée",
+  "browserExtension": "Extension de navigateur",
+  "connect": "Se connecter",
+  "install": "Installer",
+  "logout": "Se déconnecter",
+  "nostrAddressHint": "nom@exemple.com"
+}
