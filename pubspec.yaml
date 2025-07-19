@@ -1,6 +1,6 @@
 name: ndk_ui
 description: "A Flutter UI package providing ready-to-use widgets."
-version: 0.0.1
+version: 0.0.2
 homepage:
 
 environment:
