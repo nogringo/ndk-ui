@@ -56,10 +56,7 @@ class _NPictureState extends State<NPicture>
     return FutureBuilder(
       future: widget.ndk.metadata.loadMetadata(widget.pubKey),
       builder: (context, snapshot) {
-        return AnimatedSwitcher(
-          duration: widget.animationDuration,
-          child: _buildPictureContent(snapshot),
-        );
+        return _buildPictureContent(snapshot);
       },
     );
   }

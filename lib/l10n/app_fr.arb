@@ -13,5 +13,7 @@
   "invalidAddress": "Adresse invalide",
   "unableToConnect": "Impossible de se connecter",
   "publicKeyHint": "npub1...",
-  "privateKeyHint": "nsec1..."
+  "privateKeyHint": "nsec1...",
+  "newToNostr": "Nouveau sur Nostr?",
+  "getStarted": "Commencer"
 }

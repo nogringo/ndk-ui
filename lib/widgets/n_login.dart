@@ -45,7 +45,7 @@ class NLogin extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            AppLocalizations.of(context)!.newHere,
+            AppLocalizations.of(context)!.newToNostr,
             style: Theme.of(context).textTheme.labelLarge,
           ),
           SizedBox(height: 8),
@@ -53,7 +53,7 @@ class NLogin extends StatelessWidget {
             onPressed: () async {
               await launchUrl(Uri.parse('https://nstart.me/'));
             },
-            child: Text(AppLocalizations.of(context)!.createAccount),
+            child: Text(AppLocalizations.of(context)!.getStarted),
           ),
         ],
       ),
@@ -74,11 +74,14 @@ class NLogin extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: AppLocalizations.of(context)!.nostrAddressHint,
                 suffixIcon: NLoginController.to.isFetchingNip05.isFalse
-                    ? IconButton(
-                        onPressed: () => loginWithNip05(
-                          NLoginController.to.nip05FieldController.text,
+                    ? Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: IconButton(
+                          onPressed: () => loginWithNip05(
+                            NLoginController.to.nip05FieldController.text,
+                          ),
+                          icon: Icon(Icons.arrow_forward),
                         ),
-                        icon: Icon(Icons.arrow_forward),
                       )
                     : Padding(
                         padding: EdgeInsets.all(12),
@@ -112,7 +115,9 @@ class NLogin extends StatelessWidget {
             style: Theme.of(context).textTheme.labelLarge,
           ),
           TextField(
-            decoration: InputDecoration(hintText: AppLocalizations.of(context)!.publicKeyHint),
+            decoration: InputDecoration(
+              hintText: AppLocalizations.of(context)!.publicKeyHint,
+            ),
             onChanged: loginWithNpub,
           ),
         ],
@@ -129,7 +134,9 @@ class NLogin extends StatelessWidget {
             style: Theme.of(context).textTheme.labelLarge,
           ),
           TextField(
-            decoration: InputDecoration(hintText: AppLocalizations.of(context)!.privateKeyHint),
+            decoration: InputDecoration(
+              hintText: AppLocalizations.of(context)!.privateKeyHint,
+            ),
             onChanged: loginWithNsec,
           ),
         ],

@@ -49,4 +49,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get privateKeyHint => 'nsec1...';
+
+  @override
+  String get newToNostr => '¿Nuevo en Nostr?';
+
+  @override
+  String get getStarted => 'Comenzar';
 }

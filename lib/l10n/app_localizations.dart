@@ -183,6 +183,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'nsec1...'**
   String get privateKeyHint;
+
+  /// Question asking if the user is new to Nostr
+  ///
+  /// In en, this message translates to:
+  /// **'New to Nostr?'**
+  String get newToNostr;
+
+  /// Button text to get started with Nostr
+  ///
+  /// In en, this message translates to:
+  /// **'Get Started'**
+  String get getStarted;
 }
 
 class _AppLocalizationsDelegate

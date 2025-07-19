@@ -55,5 +55,13 @@
   "privateKeyHint": "nsec1...",
   "@privateKeyHint": {
     "description": "Placeholder text for private key input field"
+  },
+  "newToNostr": "New to Nostr?",
+  "@newToNostr": {
+    "description": "Question asking if the user is new to Nostr"
+  },
+  "getStarted": "Get Started",
+  "@getStarted": {
+    "description": "Button text to get started with Nostr"
   }
 }

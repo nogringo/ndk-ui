@@ -55,10 +55,7 @@ class _NBannerState extends State<NBanner> with SingleTickerProviderStateMixin {
     return FutureBuilder(
       future: widget.ndk.metadata.loadMetadata(widget.pubKey),
       builder: (context, snapshot) {
-        return AnimatedSwitcher(
-          duration: widget.animationDuration,
-          child: _buildBannerContent(snapshot),
-        );
+        return _buildBannerContent(snapshot);
       },
     );
   }
