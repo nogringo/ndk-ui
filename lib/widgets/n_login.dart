@@ -4,8 +4,8 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:get/get.dart';
 import 'package:ndk/ndk.dart';
 import 'package:ndk_ui/controllers/n_login_controller.dart';
-import 'package:ndk_ui/functions/nip05_fetch.dart';
 import 'package:ndk_ui/l10n/app_localizations.dart';
+import 'package:ndk_ui/ndk_ui.dart';
 import 'package:nip01/nip01.dart';
 import 'package:nip07_event_signer/nip07_event_signer.dart';
 import 'package:nip19/nip19.dart';
@@ -186,6 +186,7 @@ class NLogin extends StatelessWidget {
       return;
     }
 
+    await nLogout(ndk);
     ndk.accounts.loginPublicKey(pubkey: pubkey);
 
     await _storage.write(key: "ndk_ui_login_with", value: "npub");
@@ -202,6 +203,7 @@ class NLogin extends StatelessWidget {
       return;
     }
 
+    await nLogout(ndk);
     ndk.accounts.loginPrivateKey(
       pubkey: keyPair.publicKey,
       privkey: keyPair.privateKey,
@@ -233,6 +235,7 @@ class NLogin extends StatelessWidget {
       return;
     }
 
+    await nLogout(ndk);
     ndk.accounts.loginPublicKey(pubkey: pubkey);
 
     await _storage.write(key: "ndk_ui_login_with", value: "nip05");
@@ -254,6 +257,7 @@ class NLogin extends StatelessWidget {
 
     await signer.getPublicKeyAsync();
 
+    await nLogout(ndk);
     ndk.accounts.loginExternalSigner(signer: signer);
 
     await _storage.write(key: "ndk_ui_login_with", value: "nip07");
